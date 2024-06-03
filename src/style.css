@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.tasklist{
+    width: 70vw;
+    margin: auto;
+    /* border: 1px solid; */
+}
+.tasklist> *{
+    list-style: none;    
+}
+
+.tasklist .inpbox{
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.tasklist .inpbox input{
+    font-size: 1rem;
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.tasklist .inpbox button{
+    width: auto;
+    height: 100%;
+    background-color: rgb(94, 176, 94);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.tasklist li{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    width: 80%;
+    font-family: cursive;
+    margin: auto;
+    color: grey;
+    background-color: white;
+    margin-bottom: 5px;
+    font-size:x-large ;
+    padding: 10px 0px;
+    list-style: none;
+    text-decoration:none ;
+}
+
+.tasklist li div{
+    background-color: white;    
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+
+}
+
+.tasklist li button{
+    border: none;
+    background-color: red;
+    font-size: large;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.taskHeader{
+    width: 80%;
+    margin: 15px auto;
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    color: grey;
+}
+@media screen and (max-width:600px) {
+    .tasklist {
+        width: 100vw;
+        align-items: center;
+    }    
+    .tasklist li{
+        background-color:beige ;
+        border-radius: 5px;
+        font-size: 1.3rem;
+        font-family: cursive;
+    }
+}
